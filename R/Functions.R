@@ -39,6 +39,23 @@ predict.bbase <- function(object, newx) {
 	B
 }
 
+emp_deriv <- function(y, t, D, u, ztype=0){
+  #	ztype - 0 use transformation using D and u,
+  #		    - 1 use transformation using u only
+  #		    - 2 transformation from de Brabantar
+
+  nobs <- length(y)
+  z <- rep(0, nobs)
+
+  C.out <- .C("empderiv",
+              as.integer(nobs),
+              as.double(y), as.double(t),
+              as.integer(ztype),
+              as.integer(D),as.double(u),
+              fprime = as.double(z))
+
+  C.out$fprime
+}
 
 HDCurves <- function(y, t, trt, ids, balanced = TRUE, tpred = NULL,
 					    ztype = 0, p = 0.5, au = 1, bu = 1, A = 2, as = 1, bs = 1,

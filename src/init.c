@@ -13,8 +13,11 @@ extern void mcmcloop(void *, void *,void *,void *,void *,void *,void *,void *,vo
                      void *, void *,void *,void *,void *,void *,void *,void *,void *,
                      void *, void *,void *,void *,void*);
 
+extern void empderiv(void *, void *,void *,void *,void *,void *,void *);
+
 static const R_CMethodDef CEntries[] = {
     {"mcmcloop", (DL_FUNC) &mcmcloop, 32},
+    {"empderiv", (DL_FUNC) &empderiv, 7},
     {NULL, NULL, 0}
 };
 
