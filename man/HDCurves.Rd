@@ -102,7 +102,7 @@ The output list contains the following
 }
 
 \references{
-  Page, G. L.; Rodriguez-Alvarez, M. X.; Lee, DJ; (2020)  ``Bayesian Hierarchical Modeling of Growth Curve Derivatives via Sequences of Quotient Differences'' to appear
+ ``Bayesian Hierarchical Modeling of Growth Curve Derivatives via Sequences of Quotient Differences'' Journal of the Royal Statistical Society: Series C 69(2) 459-481
 }
 \examples{
 

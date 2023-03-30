@@ -20,7 +20,7 @@ emp_deriv(y, t, D, u, ztype = 0)
 }
 \value{
 
-The vector which as the same length as the input variable "y" that contains empirical derivative estimates for each entry of "y".
+A vector of the same length as the input variable "y" that contains empirical derivative estimates for each entry of "y".
 
 }
 \description{
@@ -28,7 +28,7 @@ The vector which as the same length as the input variable "y" that contains empi
 }
 
 \references{
-  Page, G. L.; Rodriguez-Alvarez, M. X.; Lee, DJ; (2020)  ``Bayesian Hierarchical Modeling of Growth Curve Derivatives via Sequences of Quotient Differences'' to appear
+  Page, G. L.; Rodriguez-Alvarez, M. X.; Lee, DJ; (2020)  ``Bayesian Hierarchical Modeling of Growth Curve Derivatives via Sequences of Quotient Differences'' Journal of the Royal Statistical Society: Series C 69(2) 459-481
 }
 \examples{
 
